@@ -1,0 +1,31 @@
+body{
+    background-color: #FFFDE7;
+    border-color:#9E9E9E ;
+    text-align:center;
+}
+h1{
+    color: #D40000;
+    background-color: #FFD9E6;
+    font-weight: bold;
+    width: 75%;
+    margin: auto;
+}
+
+.p1{
+    color:#0033CC;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.p3{
+    color:#0033CC;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.p2{
+    color:#D40000;
+    font-style: italic;
+     font-family:Arial, Helvetica, sans-serif;
+}
+hr{
+    width: 55%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 - Hiệu Ứng Ảnh Và Chữ CSS3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style20.css">
+</head>
+<body class="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-dark text-white p-3">
+
+    <div class="display-card p-4 rounded-4 text-center mb-4 shadow-lg">
+        <div class="mb-3">
+            <img id="mainImage" src="Anh/Bai20/hoahong.gif" alt="Hoa hồng" class="img-effect effect-gray">
+        </div>
+        <div class="special-text">
+            Special For You
+        </div>
+    </div>
+
+    <div class="control-panel d-flex flex-wrap justify-content-center gap-2">
+        <button type="button" class="btn-effect active" data-effect="effect-gray">Gray</button>
+        <button type="button" class="btn-effect" data-effect="effect-xray">Xray</button>
+        <button type="button" class="btn-effect" data-effect="effect-invert">Invert</button>
+        <button type="button" class="btn-effect" data-effect="effect-fliph">FlipH</button>
+        <button type="button" class="btn-effect" data-effect="effect-flipv">FlipV</button>
+        <button type="button" class="btn-effect" data-effect="effect-glow">Glow</button>
+        <button type="button" class="btn-effect" data-effect="effect-shadow">Shadow</button>
+        <button type="button" class="btn-effect" data-effect="effect-boldshadow">Bold Shadow</button>
+        <button type="button" class="btn-effect" data-effect="effect-dropshadow">DropShadow</button>
+        <button type="button" class="btn-effect" data-effect="effect-blur">Blur</button>
+        <button type="button" class="btn-effect" data-effect="effect-wave">Wave</button>
+        <button type="button" class="btn-effect" data-effect="effect-mask">Mask</button>
+        <button type="button" class="btn-effect" data-effect="effect-alpha">Alpha</button>
+    </div>
+
+    <svg style="display: none;">
+        <filter id="waveFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="2" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <script src="js/script20.js"></script>
+</body>
+</html>

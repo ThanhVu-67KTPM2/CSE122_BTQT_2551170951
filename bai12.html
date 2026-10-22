@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12 - In Lịch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style12.css">
+</head>
+<body class="d-flex justify-content-center align-items-center min-vh-100">
+
+    <div class="main-card p-4 bg-white rounded-4 shadow">
+        
+        <div class="calendar-box p-4 text-center mb-3">
+            <div id="lblNam" class="year-text">2026</div>
+            <div id="lblThang" class="month-text mb-2">Tháng 12</div>
+            <div id="lblNgay" class="day-number my-1">24</div>
+            <div id="lblThu" class="weekday-text">Thứ năm</div>
+        </div>
+
+        <div id="lblLoiChao" class="greeting-text text-center mb-3">
+            Chào buổi sáng!
+        </div>
+
+        <div class="form-box p-3">
+            <div class="row g-3 align-items-center justify-content-around text-center">
+                <div class="col-auto">
+                    <label for="txtNgay" class="form-label mb-1">Ngày</label>
+                    <input type="number" id="txtNgay" class="form-control text-center input-small mx-auto" value="24" min="1" max="31">
+                </div>
+                
+                <div class="col-auto">
+                    <label for="txtThang" class="form-label mb-1">Tháng</label>
+                    <input type="number" id="txtThang" class="form-control text-center input-small mx-auto" value="12" min="1" max="12">
+                </div>
+
+                <div class="col-auto">
+                    <label for="txtNam" class="form-label mb-1">Năm</label>
+                    <input type="number" id="txtNam" class="form-control text-center input-small mx-auto" value="2026" min="1900" max="2100">
+                </div>
+
+                <div class="col-auto">
+                    <button type="button" id="btnInLich" class="btn btn-print text-white">
+                        In<br>lịch
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script12.js"></script>
+</body>
+</html>

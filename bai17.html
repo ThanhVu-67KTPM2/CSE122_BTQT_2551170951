@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17 - Form Đăng Ký Tài Khoản</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style17.css">
+</head>
+<body class="d-flex justify-content-center align-items-center min-vh-100 py-4">
+
+    <div class="form-container p-4 p-md-5 bg-white shadow-lg rounded-4">
+        
+        <div class="mb-4">
+            <h1 class="h4 fw-bold title-color">Đăng ký tài khoản</h1>
+            <p class="text-muted small mb-0">Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+        </div>
+
+        <form id="registerForm" novalidate>
+            <div class="mb-3">
+                <label for="txtHoTen" class="form-label fw-semibold small text-secondary">Họ và tên</label>
+                <input type="text" id="txtHoTen" class="form-control" placeholder="Nhập họ và tên...">
+                <div id="errHoTen" class="feedback-msg mt-1"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="txtEmail" class="form-label fw-semibold small text-secondary">Email</label>
+                <input type="text" id="txtEmail" class="form-control" placeholder="name@example.com">
+                <div id="errEmail" class="feedback-msg mt-1"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="txtMatKhau" class="form-label fw-semibold small text-secondary">Mật khẩu</label>
+                <input type="password" id="txtMatKhau" class="form-control" placeholder="Ít nhất 6 ký tự...">
+                <div id="errMatKhau" class="feedback-msg mt-1"></div>
+            </div>
+
+            <div class="mb-4">
+                <label for="txtXacNhan" class="form-label fw-semibold small text-secondary">Xác nhận mật khẩu</label>
+                <input type="password" id="txtXacNhan" class="form-control" placeholder="Nhập lại mật khẩu...">
+                <div id="errXacNhan" class="feedback-msg mt-1"></div>
+            </div>
+
+            <button type="submit" class="btn btn-register w-100 py-2 text-white fw-semibold">Đăng ký</button>
+        </form>
+
+    </div>
+
+    <script src="js/script17.js"></script>
+</body>
+</html>

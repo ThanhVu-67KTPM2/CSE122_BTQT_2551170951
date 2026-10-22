@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 28 - Khám phá điểm đến</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style28.css">
+</head>
+<body class="bg-page py-5">
+
+    <div class="container main-container">
+        
+        <h2 class="text-center fw-bold text-primary mb-4">Khám phá điểm đến</h2>
+
+        <div id="tourCarousel" class="carousel slide mb-5 shadow-sm rounded-custom" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner rounded-custom">
+                
+                <div class="carousel-item active">
+                    <img src="Anh/Bai28/1-vinh-ha-long.jpg" class="d-block w-100 carousel-img" alt="Vịnh Hạ Long">
+                    <div class="carousel-caption caption-bg">
+                        <h5 class="fw-bold fs-4">Vịnh Hạ Long</h5>
+                        <p>Di sản thiên nhiên thế giới</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Anh/Bai28/3-thac-ban-gioc.jpg" class="d-block w-100 carousel-img" alt="Thác Bản Giốc">
+                    <div class="carousel-caption caption-bg">
+                        <h5 class="fw-bold fs-4">Thác Bản Giốc</h5>
+                        <p>Tuyệt tác thiên nhiên miền biên viễn</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Anh/Bai28/4-fansipan.jpg" class="d-block w-100 carousel-img" alt="Fansipan">
+                    <div class="carousel-caption caption-bg">
+                        <h5 class="fw-bold fs-4">Fansipan</h5>
+                        <p>Nóc nhà Đông Dương hùng vĩ</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+//
+        <ul class="nav nav-pills justify-content-center mb-4" id="tourTab" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active px-4" id="intro-tab" data-bs-toggle="pill" data-bs-target="#intro" type="button">Giới thiệu</button>
+            </li>
+            <li class="nav-item mx-2">
+                <button class="nav-link px-4" id="schedule-tab" data-bs-toggle="pill" data-bs-target="#schedule" type="button">Lịch trình</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link px-4" id="price-tab" data-bs-toggle="pill" data-bs-target="#price" type="button">Chi phí</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="tourTabContent">
+            <div class="tab-pane fade show active tab-box shadow-sm" id="intro">
+                Tour 3 ngày 2 đêm khám phá các danh thắng miền Bắc, khởi hành hằng tuần.
+            </div>
+            <div class="tab-pane fade tab-box shadow-sm" id="schedule">
+                <strong>Ngày 1:</strong> Hà Nội - Hạ Long<br>
+                <strong>Ngày 2:</strong> Hạ Long - Cao Bằng (Thác Bản Giốc)<br>
+                <strong>Ngày 3:</strong> Cao Bằng - Sapa (Fansipan) - Hà Nội
+            </div>
+            <div class="tab-pane fade tab-box shadow-sm" id="price">
+                <span class="text-danger fw-bold">3.500.000 VNĐ / người</span><br>
+                Bao gồm: Xe đưa đón, khách sạn 3 sao, vé tham quan, các bữa ăn theo lịch trình và bảo hiểm du lịch.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

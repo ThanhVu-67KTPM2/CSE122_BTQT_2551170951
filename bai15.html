@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 15 - Máy Tính Bỏ Túi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style15.css">
+</head>
+<body class="d-flex justify-content-center align-items-center min-vh-100">
+
+    <div class="calculator p-4 shadow-lg">
+        
+        <div class="screen p-3 mb-4 text-end d-flex flex-column justify-content-between">
+            <div id="lblExpression" class="expression">12 + 8 × 3</div>
+            <div id="lblResult" class="result">36</div>
+        </div>
+
+        <div class="keypad">
+            <button type="button" class="calc-btn btn-clear" data-val="C">C</button>
+            <button type="button" class="calc-btn btn-op" data-val="()">( )</button>
+            <button type="button" class="calc-btn btn-op" data-val="%">%</button>
+            <button type="button" class="calc-btn btn-op" data-val="÷">÷</button>
+
+            <button type="button" class="calc-btn btn-num" data-val="7">7</button>
+            <button type="button" class="calc-btn btn-num" data-val="8">8</button>
+            <button type="button" class="calc-btn btn-num" data-val="9">9</button>
+            <button type="button" class="calc-btn btn-op" data-val="×">×</button>
+
+            <button type="button" class="calc-btn btn-num" data-val="4">4</button>
+            <button type="button" class="calc-btn btn-num" data-val="5">5</button>
+            <button type="button" class="calc-btn btn-num" data-val="6">6</button>
+            <button type="button" class="calc-btn btn-op" data-val="-">−</button>
+
+            <button type="button" class="calc-btn btn-num" data-val="1">1</button>
+            <button type="button" class="calc-btn btn-num" data-val="2">2</button>
+            <button type="button" class="calc-btn btn-num" data-val="3">3</button>
+            <button type="button" class="calc-btn btn-op" data-val="+">+</button>
+
+            <button type="button" class="calc-btn btn-num btn-zero" data-val="0">0</button>
+            <button type="button" class="calc-btn btn-num" data-val=".">.</button>
+            <button type="button" class="calc-btn btn-equal" data-val="=">=</button>
+        </div>
+
+    </div>
+
+    <script src="js/script15.js"></script>
+</body>
+</html>
